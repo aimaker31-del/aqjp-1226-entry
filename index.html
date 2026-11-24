@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026.12.26 記録会 参加申込</title>
+<style>
+:root{--pri:#1f8a4c;--pri-d:#146b39;--pri-l:#e7f5ec;--bg:#f2f8f4;--line:#cfe3d6;--txt:#1d2b22;--sub:#5b6f62;--err:#c62828;--warn:#b26a00}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:"Hiragino Sans","Yu Gothic UI","Meiryo",sans-serif;line-height:1.6}
+header{background:linear-gradient(135deg,#167a41,#2fa463);color:#fff;padding:22px 16px 18px}
+header .in{max-width:760px;margin:0 auto}
+header h1{margin:0;font-size:1.35rem}
+header .meta{font-size:.9rem;opacity:.95;margin-top:4px}
+main{max-width:760px;margin:0 auto;padding:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 18px 8px;margin-bottom:16px}
+h2{font-size:1.05rem;margin:0 0 12px;padding-left:10px;border-left:5px solid var(--pri)}
+.f{margin-bottom:14px}
+.f label.t{display:block;font-weight:700;font-size:.95rem;margin-bottom:4px}
+.req{background:var(--err);color:#fff;font-size:.7rem;border-radius:4px;padding:1px 6px;margin-left:6px;vertical-align:2px}
+.opt{background:#8a9a90;color:#fff;font-size:.7rem;border-radius:4px;padding:1px 6px;margin-left:6px;vertical-align:2px}
+input[type=text],input[type=email],input[type=tel],input[type=date],select,textarea{width:100%;padding:10px 12px;border:1px solid #b9d3c2;border-radius:8px;font-size:1rem;background:#fff;font-family:inherit}
+input:focus,select:focus,textarea:focus{outline:2px solid #7cc79a;border-color:var(--pri)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.hint{font-size:.82rem;color:var(--sub);margin-top:3px}
+.e{font-size:.85rem;color:var(--err);margin-top:3px;display:none}
+.f.bad .e{display:block}
+.f.bad input,.f.bad select{border-color:var(--err);background:#fff6f6}
+.radios{display:flex;gap:10px;flex-wrap:wrap}
+.radios label{border:1px solid #b9d3c2;border-radius:8px;padding:8px 18px;cursor:pointer;background:#fff}
+.radios input{margin-right:6px}
+.radios label:has(input:checked){background:var(--pri-l);border-color:var(--pri);font-weight:700}
+.chk{display:flex;gap:8px;align-items:flex-start;font-size:.95rem;margin:6px 0}
+.chk input{margin-top:5px;width:18px;height:18px;flex:none}
+.info{background:var(--pri-l);border-radius:8px;padding:10px 12px;font-size:.9rem;margin-bottom:12px}
+.info b{color:var(--pri-d)}
+.fee{display:flex;justify-content:space-between;align-items:center;background:#fff8e6;border:1px solid #f0d58a;border-radius:8px;padding:10px 14px;font-size:1rem;margin-bottom:14px}
+.fee b{font-size:1.3rem}
+.btn{display:inline-block;border:0;border-radius:10px;padding:13px 22px;font-size:1.05rem;font-weight:700;cursor:pointer;font-family:inherit}
+.btn.p{background:var(--pri);color:#fff}
+.btn.p:hover{background:var(--pri-d)}
+.btn.s{background:#fff;color:var(--pri-d);border:2px solid var(--pri)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.acts{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:8px 0 16px}
+.badge{display:inline-block;font-size:.75rem;border-radius:20px;padding:1px 9px;margin-left:6px}
+.badge.ok{background:#d9f2e2;color:var(--pri-d)}
+.badge.ng{background:#fde2e2;color:var(--err)}
+.badge.few{background:#fff0cc;color:var(--warn)}
+.alert{border-radius:8px;padding:10px 12px;font-size:.9rem;margin-bottom:12px}
+.alert.w{background:#fff4e0;border:1px solid #f3c77a}
+.alert.r{background:#fdecec;border:1px solid #f1a9a9;color:#8a1c1c}
+table.cf{width:100%;border-collapse:collapse;font-size:.95rem;margin-bottom:12px}
+table.cf th{text-align:left;width:38%;background:#f3faf5;color:var(--sub);font-weight:600}
+table.cf th,table.cf td{border-bottom:1px solid var(--line);padding:8px 10px;vertical-align:top}
+.done{text-align:center;padding:24px 10px}
+.done .no{font-size:1.6rem;font-weight:800;color:var(--pri-d);letter-spacing:.05em}
+.hide{display:none!important}
+footer{text-align:center;font-size:.8rem;color:var(--sub);padding:8px 0 28px}
+details{font-size:.9rem;margin-bottom:12px}
+details summary{cursor:pointer;color:var(--pri-d);font-weight:700}
+details ul{margin:6px 0;padding-left:20px}
+@media (max-width:560px){.row2{grid-template-columns:1fr}header h1{font-size:1.15rem}}
+@media print{header{background:var(--pri)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.acts,.noprint{display:none!important}body{background:#fff}}
+</style>
+</head>
+<body>
+<header><div class="in">
+  <h1>マスターズ水泳公認記録会 in Aichi 2026 winter 参加申込</h1>
+  <div class="meta">2026年12月26日（土）安城市スポーツセンタープール（25m）／申込期間 11月27日（金）18:00〜12月10日（木）</div>
+</div></header>
+
+<main>
+<div id="periodAlert" class="alert w hide"></div>
+
+<!-- 入力画面 -->
+<section id="vForm">
+<div class="card">
+  <h2>大会の概要</h2>
+  <div class="info">
+    <b>個人での申込のみ</b>（チーム責任者の承認は不要）／<b>1人1種目まで</b>／各種目 男女各 <b>先着5名が確定</b>、6〜10人目は<b>保留</b>（キャンセル待ち）、11人目以降は受付できません<br>
+    参加資格：高校生を除く、暦年齢18歳以上（2026年12月31日現在）の健康な方<br>
+    参加費：50m・100m 1,500円／200m 2,500円／400m 3,500円（請求書発行後にお支払いください）
+  </div>
+  <details><summary>申告が必要な方・翌日の大会について</summary>
+    <ul>
+      <li>認定された障がいのある部位による泳法違反を避けたい方、招集後も介助者の同行や補助具（車いす・杖等）が必要な方は、下の「申告事項」に記入してください。当日、審判長の確認が必要な場合があります。</li>
+      <li>世界記録挑戦のコール希望・テーピング使用希望は、競技会当日に指定の書式で申告してください。</li>
+      <li>翌日の AQUATICS JAPANCUP SWIM MEET in Aichi 2026 とは別の競技会です。同じ種目にもエントリーできます。</li>
+    </ul>
+  </details>
+</div>
+
+<div class="card">
+  <h2>参加者情報</h2>
+  <div class="row2">
+    <div class="f" data-f="name"><label class="t" for="name">氏名<span class="req">必須</span></label>
+      <input type="text" id="name" placeholder="例）安城 太郎" autocomplete="name">
+      <div class="e">氏名を入力してください</div></div>
+    <div class="f" data-f="kana"><label class="t" for="kana">フリガナ<span class="req">必須</span></label>
+      <input type="text" id="kana" placeholder="例）アンジョウ タロウ">
+      <div class="e">全角カタカナで入力してください</div></div>
+  </div>
+  <div class="row2">
+    <div class="f" data-f="gender"><label class="t">性別<span class="req">必須</span></label>
+      <div class="radios"><label><input type="radio" name="gender" value="女子">女子</label><label><input type="radio" name="gender" value="男子">男子</label></div>
+      <div class="e">性別を選んでください</div><div class="hint">出場する種目（女子／男子）を決めるために使います</div></div>
+    <div class="f" data-f="birth"><label class="t" for="birth">生年月日<span class="req">必須</span></label>
+      <input type="date" id="birth" min="1920-01-01" max="2008-12-31">
+      <div class="e" id="birthErr">生年月日を入力してください</div><div class="hint" id="ageInfo">年齢区分の判定に使います</div></div>
+  </div>
+  <div class="f" data-f="jmsa"><label class="t" for="jmsa">マスターズ水泳協会 個人ID<span class="req">必須</span></label>
+    <input type="text" id="jmsa" placeholder="例）ABC12345" maxlength="12" style="text-transform:uppercase">
+    <label class="chk"><input type="checkbox" id="jmsaNone">マスターズ水泳協会に登録していない（記録の公認申請はされません）</label>
+    <div class="e">個人IDを入力するか、「登録していない」にチェックしてください（英字3文字＋数字5桁）</div></div>
+  <div class="f" data-f="team"><label class="t" for="team">チーム名<span class="req">必須</span></label>
+    <input type="text" id="team" placeholder="例）安城マスターズ">
+    <div class="hint">協会に2026年チーム登録済みの方は、チームIDに関連付けられたチーム名で。未登録の方はクラブ名・学校名・練習拠点名など任意の名前で構いません。複数チームに所属している場合は1チームのみ。</div>
+    <div class="e">チーム名を入力してください</div></div>
+  <div class="f" data-f="teamId"><label class="t" for="teamId">マスターズ水泳協会 チームID<span class="opt">任意</span></label>
+    <input type="text" id="teamId" placeholder="2026年チーム登録済みの方のみ" maxlength="20" style="text-transform:uppercase">
+    <div class="hint">記録の公認申請に使います。分からない場合・未登録の場合は空欄で構いません。</div>
+    <div class="e">チームIDは半角の英数字で入力してください</div></div>
+</div>
+
+<div class="card">
+  <h2>連絡先</h2>
+  <div class="f" data-f="email"><label class="t" for="email">連絡先メールアドレス<span class="req">必須</span></label>
+    <input type="email" id="email" placeholder="例）taro@example.com" autocomplete="email">
+    <div class="hint">受付確認と請求書をこのアドレスへお送りします</div>
+    <div class="e">メールアドレスの形式が正しくありません</div></div>
+  <div class="f" data-f="email2"><label class="t" for="email2">メールアドレス（確認用）<span class="req">必須</span></label>
+    <input type="email" id="email2" autocomplete="off">
+    <div class="e">上のメールアドレスと一致しません</div></div>
+  <div class="f" data-f="tel"><label class="t" for="tel">電話番号（ご本人）<span class="req">必須</span></label>
+    <input type="tel" id="tel" placeholder="例）090-1234-5678" autocomplete="tel">
+    <div class="hint">当日など、事務局から急ぎでご連絡するときに使います</div>
+    <div class="e">電話番号を入力してください（数字10〜11桁）</div></div>
+  <div class="row2">
+    <div class="f" data-f="emTel"><label class="t" for="emTel">緊急連絡先（本人以外の電話）<span class="req">必須</span></label>
+      <input type="tel" id="emTel" placeholder="例）090-1234-5678" autocomplete="off">
+      <div class="e">本人以外の方の電話番号を入力してください（数字10〜11桁）</div></div>
+    <div class="f" data-f="emName"><label class="t" for="emName">緊急連絡先のお名前（続柄）<span class="opt">任意</span></label>
+      <input type="text" id="emName" placeholder="例）安城 花子（妻）"></div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>参加種目・エントリータイム</h2>
+  <div class="f" data-f="event"><label class="t" for="event">参加種目（1種目まで）<span class="req">必須</span></label>
+    <select id="event"><option value="">先に性別を選んでください</option></select>
+    <div class="hint" id="capInfo"></div>
+    <div class="e" id="eventErr">参加種目を選んでください</div></div>
+  <div class="f" data-f="time"><label class="t" for="time">エントリータイム<span class="req">必須</span></label>
+    <input type="text" id="time" placeholder="例）32.50　1:05.30　5:20.00" inputmode="decimal">
+    <label class="chk"><input type="checkbox" id="noTime">記録がない（初めて泳ぐ種目など）</label>
+    <div class="hint">分:秒.1/100秒 で入力（「1.05.30」「10530」のような入力も自動で直します）</div>
+    <div class="e" id="timeErr">タイムを「32.50」「1:05.30」の形式で入力してください</div></div>
+  <div class="fee"><span>参加費</span><b id="fee">―</b></div>
+</div>
+
+<div class="card">
+  <h2>申告事項</h2>
+  <label class="chk"><input type="checkbox" id="decl">障がいに関する申告がある（泳法違反の回避、介助者の同行・補助具の使用など）</label>
+  <div class="f hide" id="declBox" data-f="declText"><textarea id="declText" rows="3" placeholder="例）右肩の障がいのため、バタフライで片手のタッチになります／招集後も車いすを使用します"></textarea>
+    <div class="e">申告の内容を入力してください</div></div>
+  <div class="f"><label class="t" for="note">事務局への連絡事項<span class="opt">任意</span></label>
+    <textarea id="note" rows="2"></textarea></div>
+</div>
+
+<div class="card">
+  <h2>確認事項</h2>
+  <div class="f" data-f="agree">
+    <label class="chk"><input type="checkbox" id="ag1">高校生ではなく、2026年12月31日現在で18歳以上です</label>
+    <label class="chk"><input type="checkbox" id="ag2">健康であり、大会要項と日本マスターズ水泳協会の競泳競技規則に従って参加します</label>
+    <label class="chk"><input type="checkbox" id="ag3">参加費は請求書の発行後、本人が支払います</label>
+    <div class="e">すべての確認事項にチェックしてください</div>
+  </div>
+</div>
+
+<div class="acts"><button class="btn p" id="toConfirm">入力内容を確認する</button></div>
+</section>
+
+<!-- 確認画面 -->
+<section id="vConfirm" class="hide">
+<div class="card">
+  <h2>入力内容の確認</h2>
+  <p style="margin-top:0;font-size:.92rem">内容に誤りがないか確認して「この内容で申し込む」を押してください。</p>
+  <table class="cf" id="cfTable"></table>
+  <div id="sendErr" class="alert r hide"></div>
+</div>
+<div class="acts">
+  <button class="btn s" id="back">修正する</button>
+  <button class="btn p" id="submit">申込データを送信する（ご自身・事務局）</button>
+</div>
+<p class="noprint" style="text-align:center;font-size:.85rem;color:var(--sub);margin-top:-6px">送信すると、申込控え（PDF・CSV）を添付したメールが、ご自身と大会事務局に届きます。</p>
+</section>
+
+<!-- 完了画面 -->
+<section id="vDone" class="hide">
+<div class="card done">
+  <h2 id="doneTitle" style="border:0;padding:0;text-align:center">お申し込みを受け付けました</h2>
+  <div>受付番号</div>
+  <div class="no" id="doneNo"></div>
+  <p id="doneMsg" style="font-size:.92rem">ご自身と大会事務局に、申込控え（PDF・CSV）を添付したメールを送信しました。届かない場合は迷惑メールフォルダもご確認ください。<br>参加費は、後日お送りする請求書に従ってお支払いください。</p>
+  <table class="cf" id="doneTable" style="text-align:left"></table>
+  <div class="acts"><button class="btn s" onclick="window.print()">この画面を印刷する</button></div>
+</div>
+</section>
+</main>
+<footer class="noprint" id="counter" style="visibility:hidden">アクセス数 <b id="cntPv">―</b>（訪問者 <span id="cntUu">―</span>人）</footer>
+
+<script>
+/* ===== 設定（ここを変更） ===== */
+const CFG = {
+  submitUrl: 'https://script.google.com/macros/s/AKfycbxRARCoK3mKEAL9R3gEzBjNvcdaDTPXooayJJZiGEfzvBc-Dip4XaOX0HDdv7O2uR557A/exec',                 // GASウェブアプリのURL（…/exec）。空のときは「申込データを保存」でメール提出
+  mailTo: 'aquatics_japan@yahoo.co.jp', // 送信先が未設定のときの提出先
+  openAt:  '2026-11-27T18:00:00+09:00',   // 受付開始 11/27 18:00
+  closeAt: '2026-12-10T23:59:59+09:00',
+  capacity: 5,                   // 各種目・男女ごとの確定枠（1〜5人目）
+  waitlist: 5,                   // 保留枠（6〜10人目）。11人目以降は受付不可
+  ageBase: '2026-12-31',         // 年齢基準日
+  meet: 'マスターズ水泳公認記録会 in Aichi 2026 winter（2026.12.26）'
+};
+const APP_VERSION = '2026-11-24b';
+
+/* 種目（プログラムNo：女子=奇数・男子=偶数） */
+const EVENTS = [
+  ['200m 個人メドレー',1,200],['50m 自由形',3,50],['50m 背泳ぎ',5,50],['50m 平泳ぎ',7,50],['50m バタフライ',9,50],
+  ['400m 個人メドレー',11,400],['400m 自由形',13,400],['200m 自由形',15,200],['200m 背泳ぎ',17,200],['200m 平泳ぎ',19,200],
+  ['200m バタフライ',21,200],['100m 個人メドレー',23,100],['100m 自由形',25,100],['100m 背泳ぎ',27,100],['100m 平泳ぎ',29,100],['100m バタフライ',31,100]
+];
+const fee = d => d>=400?3500:d>=200?2500:1500;
+const progNo = (ev,g) => ev[1] + (g==='男子'?1:0);
+const pad2 = n => String(n).padStart(2,'0');
+
+/* ===== 便利関数 ===== */
+const $ = id => document.getElementById(id);
+const z2h = s => s.replace(/[０-９Ａ-Ｚａ-ｚ：．－]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0)).replace(/ー|―|‐/g,'-');
+const hira2kata = s => s.replace(/[ぁ-ゖ]/g,c=>String.fromCharCode(c.charCodeAt(0)+0x60));
+function ageAt(birth){ // 暦年齢 = 基準日の年 − 生まれ年
+  const y = +birth.slice(0,4); return y ? (+CFG.ageBase.slice(0,4)) - y : NaN;
+}
+function ageClass(a){ if(!(a>=18)) return ''; if(a<25) return '18'; return String(Math.floor(a/5)*5); }
+function ageClassLabel(a){ const c=ageClass(a); if(!c) return ''; const lo=+c, hi=c==='18'?24:lo+4; return `${c}区分（${lo}〜${hi}歳）`; }
+function normTime(raw){
+  let s = z2h(String(raw||'')).trim().replace(/[\s]/g,'');
+  if(!s) return '';
+  let m;
+  if(/^\d+$/.test(s)){ // 3250 → 32.50 / 10530 → 1:05.30
+    if(s.length<=2){ m=[0,'0',s,'00']; }                       // 29 → 29.00
+    else if(s.length<=4){ m=[0,'0',s.slice(0,-2),s.slice(-2)]; } // 2950 → 29.50
+    else m=[0,s.slice(0,-4),s.slice(-4,-2),s.slice(-2)];
+  } else {
+    m = s.match(/^(?:(\d{1,2})[:.'’分])?(\d{1,2})[.'"″秒](\d{1,2})$/);
+    if(!m) return null;
+  }
+  const mi=+(m[1]||0), se=+m[2], cs=(m[3]||'0').padEnd(2,'0');
+  if(se>=60 || mi>59) return null;
+  if(mi===0 && se===0 && +cs===0) return null;
+  return (mi?mi+':'+pad2(se):String(se))+'.'+cs.slice(0,2);
+}
+const timeSec = t => { if(!t) return Infinity; const p=t.split(':'); return p.length>1? +p[0]*60 + +p[1] : +p[0]; };
+
+/* ===== 申込期間 ===== */
+(function(){
+  const now = Date.now(), a = Date.parse(CFG.openAt), b = Date.parse(CFG.closeAt), el=$('periodAlert');
+  if(now < a){ el.textContent='申込の受付は 11月27日（金）18:00 からです。現在は受付前のため、送信はできません（入力の確認はできます）。'; el.classList.remove('hide'); }
+  else if(now > b){ el.textContent='申込期間（12月10日まで）は終了しました。'; el.className='alert r'; }
+})();
+// テスト用：URLの末尾に ?test=1 を付けると画面側の期間チェックを外す（受付するかはGASのTEST_MODEで決まる）
+const TEST = /[?&]test=1(&|$)/.test(location.search);
+if(TEST){ const el=$('periodAlert'); el.textContent='テスト用の画面です（?test=1）。受付用スクリプトがテストモードのときだけ送信できます。'; el.className='alert w'; }
+// 受付用スクリプトがテストモード（TEST_MODE=1）のときは、?test=1 が無くても画面側の期間チェックを外す。
+// テストモードを消すと自動で元に戻る（11/27 18:00〜12/10以外は送信不可）
+let SERVER_TEST = false;
+async function checkServerTest(){
+  if(!CFG.submitUrl) return;
+  try{ const j = await (await fetch(CFG.submitUrl + '?check=1', {cache:'no-store'})).json();
+    if(j && j.test){ SERVER_TEST = true; const el=$('periodAlert'); el.textContent='テスト受付中です（受付用スクリプトがテストモード）。送信でき、メール件名に【テスト】が付きます。'; el.className='alert w'; }
+  }catch(e){}
+}
+const inPeriod = () => { if(TEST || SERVER_TEST) return true; const n=Date.now(); return n>=Date.parse(CFG.openAt) && n<=Date.parse(CFG.closeAt); };
+
+/* ===== 定員（送信先があるときだけ取得） ===== */
+let counts = null;
+async function loadCounts(){
+  if(!CFG.submitUrl) return;
+  try{
+    const r = await fetch(CFG.submitUrl + '?counts=1', {cache:'no-store'});
+    const j = await r.json(); if(j && j.counts) counts = j.counts;
+  }catch(e){ counts = null; }
+  fillEvents();
+}
+
+/* ===== 種目プルダウン ===== */
+const gender = () => (document.querySelector('input[name=gender]:checked')||{}).value || '';
+function fillEvents(){
+  const g = gender(), sel=$('event'), cur=sel.value;
+  if(!g){ sel.innerHTML='<option value="">先に性別を選んでください</option>'; return; }
+  let h = '<option value="">選んでください</option>';
+  EVENTS.forEach((ev,i)=>{
+    const no = progNo(ev,g); let tag='', dis='';
+    if(counts){ const n = counts[no]||0, left = CFG.capacity - n, wl = CFG.capacity + CFG.waitlist - n;
+      if(wl<=0){ tag=' 〔受付終了〕'; dis=' disabled'; }
+      else if(left<=0) tag=` 〔確定枠なし・保留で受付 あと${wl}名〕`;
+      else tag=` 〔確定枠 残り${left}名〕`; }
+    h += `<option value="${i}"${dis}>No.${pad2(no)} ${g} ${ev[0]}（${fee(ev[2]).toLocaleString()}円）${tag}</option>`;
+  });
+  sel.innerHTML = h;
+  if(cur!=='' && !sel.querySelector(`option[value="${cur}"]:not([disabled])`)) sel.value=''; else sel.value=cur;
+  $('capInfo').textContent = (counts ? '残り枠は画面を開いた時点の数です。' : '') +
+    '各種目 男女各5名までが確定、6〜10人目は保留（キャンセル待ち・取消が出たら受付順に繰り上げ）、11人目以降は受付できません。確定か保留かは送信した時点の順番で決まります。';
+  updFee();
+}
+function updFee(){ const i=$('event').value; $('fee').textContent = i==='' ? '―' : fee(EVENTS[i][2]).toLocaleString()+'円'; }
+
+/* ===== 入力の整形・連動 ===== */
+document.querySelectorAll('input[name=gender]').forEach(r=>r.addEventListener('change',()=>{fillEvents();save();}));
+$('event').addEventListener('change',()=>{updFee();save();});
+$('kana').addEventListener('blur',e=>{ e.target.value = hira2kata(e.target.value).replace(/\s+/g,' ').replace(/　/g,' ').trim(); });
+$('jmsa').addEventListener('blur',e=>{ e.target.value = z2h(e.target.value).toUpperCase().replace(/\s/g,''); });
+$('teamId').addEventListener('blur',e=>{ e.target.value = z2h(e.target.value).toUpperCase().replace(/\s/g,''); });
+$('jmsaNone').addEventListener('change',e=>{ $('jmsa').disabled=e.target.checked; if(e.target.checked) $('jmsa').value=''; });
+$('tel').addEventListener('blur',e=>{ e.target.value = z2h(e.target.value).replace(/[^\d-]/g,''); });
+$('emTel').addEventListener('blur',e=>{ e.target.value = z2h(e.target.value).replace(/[^\d-]/g,''); });
+$('time').addEventListener('blur',e=>{ const t=normTime(e.target.value); if(t) e.target.value=t; });
+$('noTime').addEventListener('change',e=>{ $('time').disabled=e.target.checked; if(e.target.checked) $('time').value=''; });
+$('decl').addEventListener('change',e=>$('declBox').classList.toggle('hide',!e.target.checked));
+$('birth').addEventListener('change',()=>{
+  const b=$('birth').value, a=ageAt(b);
+  $('ageInfo').textContent = b ? (a>=18 ? `2026年12月31日現在 ${a}歳／${ageClassLabel(a)}` : '18歳未満のため参加できません') : '年齢区分の判定に使います';
+});
+
+/* ===== 入力内容の保存（この端末のみ） ===== */
+const LSK='aqjp1226_entry_draft_v1', FIELDS=['name','kana','birth','jmsa','team','teamId','email','email2','tel','emTel','emName','event','time','declText','note'];
+function save(){ try{ const d={}; FIELDS.forEach(k=>d[k]=$(k).value); ['jmsaNone','noTime','decl'].forEach(k=>d[k]=$(k).checked); d.gender=gender(); localStorage.setItem(LSK,JSON.stringify(d)); }catch(e){} }
+function restore(){ try{ const d=JSON.parse(localStorage.getItem(LSK)||'null'); if(!d) return;
+  if(d.gender){ const r=document.querySelector(`input[name=gender][value="${d.gender}"]`); if(r) r.checked=true; }
+  fillEvents();
+  FIELDS.forEach(k=>{ if(d[k]!=null) $(k).value=d[k]; });
+  ['jmsaNone','noTime','decl'].forEach(k=>{ $(k).checked=!!d[k]; $(k).dispatchEvent(new Event('change')); });
+  $('birth').dispatchEvent(new Event('change')); updFee();
+}catch(e){} }
+document.addEventListener('input', save);
+
+/* ===== 検証 ===== */
+function setBad(f,bad,msg){ const el=document.querySelector(`[data-f="${f}"]`); if(!el) return; el.classList.toggle('bad',bad); if(msg){ const e=el.querySelector('.e'); if(e) e.textContent=msg; } }
+function collect(){
+  const v = k => $(k).value.trim();
+  const d = {
+    name: v('name').replace(/\s+/g,' ').replace(/　/g,' '),
+    kana: hira2kata(v('kana')).replace(/[\s　]+/g,' '),
+    gender: gender(), birth: v('birth'),
+    jmsaId: $('jmsaNone').checked ? '' : z2h(v('jmsa')).toUpperCase(),
+    jmsaNone: $('jmsaNone').checked,
+    team: v('team'), teamId: z2h(v('teamId')).toUpperCase().replace(/\s/g,''), email: v('email'), tel: z2h(v('tel')), emTel: z2h(v('emTel')), emName: v('emName'),
+    noTime: $('noTime').checked, time: $('noTime').checked ? '' : normTime(v('time')),
+    declare: $('decl').checked ? v('declText') : '', note: v('note')
+  };
+  d.age = ageAt(d.birth); d.ageClass = ageClass(d.age);
+  const i = $('event').value;
+  if(i!=='' && d.gender){ const ev=EVENTS[i]; d.event=ev[0]; d.distance=ev[2]; d.progNo=progNo(ev,d.gender); d.fee=fee(ev[2]); }
+  return d;
+}
+function validate(d){
+  const bad = {};
+  bad.name = !d.name;
+  bad.kana = !d.kana || !/^[ァ-ヶー・ 　]+$/.test(d.kana);
+  bad.gender = !d.gender;
+  if(!d.birth){ bad.birth='生年月日を入力してください'; }
+  else if(!(d.age>=18)){ bad.birth='2026年12月31日現在で18歳以上の方が対象です'; }
+  else if(d.age>110){ bad.birth='生年月日を確認してください'; }
+  bad.jmsa = !d.jmsaNone && !/^[A-Z]{3}\d{5}$/.test(d.jmsaId);
+  bad.team = !d.team;
+  bad.teamId = !!d.teamId && !/^[A-Z0-9-]{2,20}$/.test(d.teamId);
+  bad.email = !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email);
+  bad.email2 = !bad.email && $('email2').value.trim() !== d.email;
+  const myTel = d.tel.replace(/-/g,''), tel = d.emTel.replace(/-/g,'');
+  bad.tel = !/^0\d{9,10}$/.test(myTel);
+  if(!/^0\d{9,10}$/.test(tel)) bad.emTel = '本人以外の方の電話番号を入力してください（数字10〜11桁）';
+  else if(tel === myTel) bad.emTel = 'ご本人の電話番号と同じです。ご家族など、本人以外の方の電話番号を入力してください';
+  else bad.emTel = false;
+  bad.event = !d.event;
+  bad.time = !d.noTime && !d.time;
+  bad.declText = $('decl').checked && !d.declare;
+  bad.agree = !($('ag1').checked && $('ag2').checked && $('ag3').checked);
+  let first=null;
+  for(const k in bad){ const b=!!bad[k]; setBad(k,b,typeof bad[k]==='string'?bad[k]:null); if(b && !first) first=k; }
+  if(first){ document.querySelector(`[data-f="${first}"]`).scrollIntoView({behavior:'smooth',block:'center'}); return false; }
+  return true;
+}
+
+/* ===== 画面遷移 ===== */
+let current = null;
+function rows(d,no,status){
+  const r = [
+    no?['受付番号',no]:null,
+    status?['受付状況', status==='保留'?'<b style="color:#b26a00">保留（キャンセル待ち）</b>':'<b>確定</b>']:null,
+    ['大会',CFG.meet],
+    ['氏名',`${esc(d.name)}（${esc(d.kana)}）`],
+    ['性別・生年月日',`${d.gender}／${d.birth.replace(/-/g,'/')}`],
+    ['年齢区分',`${d.age}歳（2026/12/31現在）／${ageClassLabel(d.age)}`],
+    ['協会個人ID', d.jmsaId || '未登録'],
+    ['チーム名',esc(d.team)],
+    ['協会チームID', d.teamId ? esc(d.teamId) : '（記入なし）'],
+    ['メールアドレス',esc(d.email)],
+    ['電話番号（本人）',esc(d.tel)],
+    ['緊急連絡先',esc(d.emTel)+(d.emName?`（${esc(d.emName)}）`:'')],
+    ['参加種目',`No.${pad2(d.progNo)} ${d.gender} ${d.event}`],
+    ['エントリータイム', d.time || '記録なし'],
+    ['参加費', d.fee.toLocaleString()+'円'],
+    ['申告事項', d.declare ? esc(d.declare) : 'なし'],
+    d.note?['連絡事項',esc(d.note)]:null
+  ].filter(Boolean);
+  return r.map(([a,b])=>`<tr><th>${a}</th><td>${b}</td></tr>`).join('');
+}
+function esc(s){ return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function show(id){ ['vForm','vConfirm','vDone'].forEach(v=>$(v).classList.toggle('hide',v!==id)); window.scrollTo(0,0); }
+
+$('toConfirm').onclick = ()=>{
+  const d = collect(); if(!validate(d)) return;
+  current = d; $('cfTable').innerHTML = rows(d);
+  $('sendErr').classList.add('hide');
+  $('submit').disabled=false;
+  if(!CFG.submitUrl){ $('sendErr').innerHTML = `現在、送信の準備中です。しばらくしてから、もう一度お試しください（お問い合わせ：<b>${CFG.mailTo}</b>）。`; $('sendErr').className='alert r'; $('submit').disabled=true; }
+  else if(!inPeriod()){ $('sendErr').textContent='申込期間外のため送信できません。'; $('sendErr').className='alert r'; $('submit').disabled=true; }
+  show('vConfirm');
+};
+$('back').onclick = ()=>show('vForm');
+
+function payload(){
+  let sid = sessionStorage.getItem('aqjp1226_sid');
+  if(!sid){ sid = Date.now().toString(36)+Math.random().toString(36).slice(2,8); sessionStorage.setItem('aqjp1226_sid',sid); }
+  return Object.assign({format:'aqjp1226-entry',version:1,app:APP_VERSION,submissionId:sid,createdAt:new Date().toISOString()}, current);
+}
+$('submit').onclick = async ()=>{
+  const btn=$('submit'); btn.disabled=true; btn.textContent='送信しています…';
+  try{
+    const r = await fetch(CFG.submitUrl,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload())});
+    const j = await r.json();
+    if(!j.ok) throw new Error(j.error||'受付できませんでした');
+    done(j.receiptNo, j.status);
+  }catch(e){
+    $('sendErr').textContent = '送信できませんでした：' + e.message; $('sendErr').className='alert r';
+    btn.disabled=false; btn.textContent='申込データを送信する（ご自身・事務局）';
+    loadCounts();
+  }
+};
+const DONE_OK = $('doneMsg').innerHTML;
+function done(no, status){
+  const hold = status === '保留';
+  $('doneTitle').textContent = hold ? '「保留」として受け付けました' : 'お申し込みを受け付けました（確定）';
+  $('doneMsg').innerHTML = hold
+    ? '<b>この種目は確定枠（5名）に達しているため、保留（キャンセル待ち）での受付です。</b><br>確定した方に取消が出た場合、受付順に繰り上げて事務局からご連絡します。繰り上げのご連絡があるまで、参加費のお支払いは不要です。<br>ご自身と大会事務局に、申込控え（PDF・CSV）を添付したメールを送信しました。届かない場合は迷惑メールフォルダもご確認ください。'
+    : DONE_OK;
+  $('doneNo').textContent = no; $('doneTable').innerHTML = rows(current,no,status);
+  try{ localStorage.removeItem(LSK); sessionStorage.removeItem('aqjp1226_sid'); }catch(e){}
+  show('vDone');
+}
+
+/* ===== アクセス数カウンター =====
+   主催者のアクセスを除く：URLの末尾に ?nocount=1 を付けて一度開くと、そのブラウザでは以後数えない（?nocount=0 で解除） */
+const NOCOUNT = (()=>{ try{
+  if(/[?&]nocount=1(&|$)/.test(location.search)) localStorage.setItem('aqjp1226_nocount','1');
+  if(/[?&]nocount=0(&|$)/.test(location.search)) localStorage.removeItem('aqjp1226_nocount');
+  return localStorage.getItem('aqjp1226_nocount')==='1';
+}catch(e){ return /[?&]nocount=1(&|$)/.test(location.search); } })();
+async function counter(){
+  if(!CFG.submitUrl) return;
+  let q = 'hit=0';
+  if(!NOCOUNT){
+    let isNew = 1; const today = new Date().toLocaleDateString('sv-SE',{timeZone:'Asia/Tokyo'});
+    try{ isNew = localStorage.getItem('aqjp1226_visit')===today ? 0 : 1; localStorage.setItem('aqjp1226_visit', today); }catch(e){}
+    q = 'hit=1&new=' + isNew;
+  }
+  try{
+    const j = await (await fetch(CFG.submitUrl + '?' + q, {cache:'no-store'})).json();
+    if(j && j.ok && j.total!=null){ $('cntPv').textContent = Number(j.total).toLocaleString(); $('cntUu').textContent = Number(j.visitors).toLocaleString();
+      $('counter').style.visibility = 'visible'; if(NOCOUNT) $('counter').title = 'このブラウザのアクセスは数えていません（主催者用）'; }
+  }catch(e){}
+}
+
+restore(); loadCounts(); checkServerTest(); counter();
+</script>
+</body>
+</html>
