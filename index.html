@@ -221,7 +221,7 @@ const CFG = {
   ageBase: '2026-12-31',         // 年齢基準日
   meet: 'マスターズ水泳公認記録会 in Aichi 2026 winter（2026.12.26）'
 };
-const APP_VERSION = '2026-11-24b';
+const APP_VERSION = '2026-11-28';
 
 /* 種目（プログラムNo：女子=奇数・男子=偶数） */
 const EVENTS = [
@@ -439,7 +439,7 @@ $('submit').onclick = async ()=>{
     const r = await fetch(CFG.submitUrl,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload())});
     const j = await r.json();
     if(!j.ok) throw new Error(j.error||'受付できませんでした');
-    done(j.receiptNo, j.status);
+    done(j.receiptNo, j.status, j.mailed);
   }catch(e){
     $('sendErr').textContent = '送信できませんでした：' + e.message; $('sendErr').className='alert r';
     btn.disabled=false; btn.textContent='申込データを送信する（ご自身・事務局）';
@@ -447,12 +447,13 @@ $('submit').onclick = async ()=>{
   }
 };
 const DONE_OK = $('doneMsg').innerHTML;
-function done(no, status){
+function done(no, status, mailed){
   const hold = status === '保留';
   $('doneTitle').textContent = hold ? '「保留」として受け付けました' : 'お申し込みを受け付けました（確定）';
   $('doneMsg').innerHTML = hold
     ? '<b>この種目は確定枠（5名）に達しているため、保留（キャンセル待ち）での受付です。</b><br>確定した方に取消が出た場合、受付順に繰り上げて事務局からご連絡します。繰り上げのご連絡があるまで、参加費のお支払いは不要です。<br>ご自身と大会事務局に、申込控え（PDF・CSV）を添付したメールを送信しました。届かない場合は迷惑メールフォルダもご確認ください。'
     : DONE_OK;
+  if(mailed === false) $('doneMsg').innerHTML = '<b style="color:#c62828">お申し込みは受け付けましたが、確認メールを送れませんでした。</b><br>この画面の受付番号を控えてください（画面の保存・印刷をおすすめします）。事務局で確認し、あらためてメールをお送りします。'+(hold?'<br>保留（キャンセル待ち）での受付です。繰り上げのご連絡があるまで、参加費のお支払いは不要です。':'<br>参加費は、後日お送りする請求書に従ってお支払いください。');
   $('doneNo').textContent = no; $('doneTable').innerHTML = rows(current,no,status);
   try{ localStorage.removeItem(LSK); sessionStorage.removeItem('aqjp1226_sid'); }catch(e){}
   show('vDone');
